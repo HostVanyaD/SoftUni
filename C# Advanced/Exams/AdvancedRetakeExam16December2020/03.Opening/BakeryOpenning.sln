@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BakeryOpenning", "..\..\..\..\Desktop\SoftUni\Advanced\RetakeExam16December2020\BakeryOpenning.csproj", "{A028048E-0ADD-494F-B466-28B7A53DC4CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A028048E-0ADD-494F-B466-28B7A53DC4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A028048E-0ADD-494F-B466-28B7A53DC4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A028048E-0ADD-494F-B466-28B7A53DC4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A028048E-0ADD-494F-B466-28B7A53DC4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {259BB982-E824-482E-A58E-24B17898891E}
+	EndGlobalSection
+EndGlobal
