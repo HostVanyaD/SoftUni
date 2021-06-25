@@ -10,30 +10,24 @@ namespace Guild
         private List<Player> roster;
 
         public string Name { get; set; }
-        public int Capacity { get; set; }
-        public int Count
-        {
-            get
-            {
-                return roster.Count;
-            }
-        }
+        public int Capacity { get; private set; }
+        public int Count { get => roster.Count; }
 
         public Guild(string name, int capacity)
         {
-            Name = name;
-            Capacity = capacity;
-            roster = new List<Player>();
+            this.Name = name;
+            this.Capacity = capacity;
+            this.roster = new List<Player>();
         }
 
         public void AddPlayer(Player player)
         {
-            if (Capacity > Count)
+            if (Count < Capacity)
             {
                 roster.Add(player);
             }
         }
-
+        
         public bool RemovePlayer(string name)
         {
             if (roster.Any(p => p.Name == name))
@@ -43,36 +37,47 @@ namespace Guild
             }
             return false;
         }
-
+        
         public void PromotePlayer(string name)
         {
-            roster.FirstOrDefault(x => x.Name == name).Rank = "Member";
+            var playerToPromote = roster.Find(p => p.Name == name);
+
+            if (playerToPromote != null && playerToPromote.Rank != "Member")
+            {
+                playerToPromote.Rank = "Member";
+            }
         }
 
         public void DemotePlayer(string name)
         {
-            roster.FirstOrDefault(x => x.Name == name).Rank = "Trial";            
+            var playerToPromote = roster.Find(p => p.Name == name);
+
+            if (playerToPromote != null && playerToPromote.Rank != "Trial")
+            {
+                playerToPromote.Rank = "Trial";
+            }
         }
 
-        public Player[] KickPlayersByClass(string theirClass)
+        public Player[] KickPlayersByClass(string _class)
         {
-            Player[] kickedPlayers = roster.Where(p => p.Class == theirClass).ToArray();
-            roster = roster.Where(p => p.Class != theirClass).ToList();
+            Player[] kickedPlayers = roster.Where(p => p.Class == _class).ToArray();
+            roster.RemoveAll(p => p.Class == _class);
 
             return kickedPlayers;
         }
 
         public string Report()
         {
-            StringBuilder result = new StringBuilder();
+            var sb = new StringBuilder();
 
-            result.AppendLine($"Players in the guild: {Name}");
-            foreach (var player in roster)
+            sb.AppendLine($"Players in the guild: {this.Name}");
+
+            foreach (var item in roster)
             {
-                result.AppendLine(player.ToString());
+                sb.AppendLine(item.ToString());
             }
 
-            return result.ToString().TrimEnd();
+            return sb.ToString().Trim();
         }
     }
 }
