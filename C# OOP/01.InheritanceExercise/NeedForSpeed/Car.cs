@@ -2,14 +2,12 @@
 {
     public class Car : Vehicle
     {
-        private const double defaultFuelConsumption = 3;
+        private const double DefaultFuelConsumption = 3;
 
-        public Car(int horsePower, double fuel)
-            :base(horsePower, fuel)
+        public Car(int horsePower, double fuel) : base(horsePower, fuel)
         {
-
         }
 
-        public override double FuelConsumption { get => defaultFuelConsumption; }
+        public override double FuelConsumption => DefaultFuelConsumption;
     }
 }
