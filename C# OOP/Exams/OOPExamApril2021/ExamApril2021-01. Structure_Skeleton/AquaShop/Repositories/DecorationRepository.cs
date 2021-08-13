@@ -15,35 +15,17 @@
         public DecorationRepository()
         {
             decorations = new List<IDecoration>();
-            Models = new List<IDecoration>();
         }
 
-        public IReadOnlyCollection<IDecoration> Models { get; private set; }
+        public IReadOnlyCollection<IDecoration> Models => decorations.AsReadOnly();
 
         public void Add(IDecoration model)
-        {
-            decorations.Add(model);
-
-            Models = decorations;
-        }
+            => decorations.Add(model);
 
         public IDecoration FindByType(string type)
-        {
-            return Models.FirstOrDefault(m => m.GetType().Name == type);
-        }
+            => Models.FirstOrDefault(m => m.GetType().Name == type);
 
         public bool Remove(IDecoration model)
-        {
-            if (Models.Contains(model))
-            {
-                decorations.Remove(model);
-
-                Models = decorations;
-
-                return true;
-            }
-
-            return false;
-        }
+            => decorations.Remove(model);
     }
 }

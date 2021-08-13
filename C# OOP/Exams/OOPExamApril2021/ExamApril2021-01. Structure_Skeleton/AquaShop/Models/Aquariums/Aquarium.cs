@@ -14,7 +14,7 @@
     {
         private string name;
 
-        public Aquarium(string name, int capacity)
+        protected Aquarium(string name, int capacity)
         {
             Name = name;
             Capacity = capacity;
@@ -38,13 +38,13 @@
             }
         }
 
-        public int Capacity { get; }
+        public int Capacity { get; private set; }
 
         public int Comfort => Decorations.Sum(x => x.Comfort);
 
         public ICollection<IDecoration> Decorations { get; }
 
-        public ICollection<IFish> Fish { get; private set; }
+        public ICollection<IFish> Fish { get; }
 
         public void AddDecoration(IDecoration decoration)
         {
