@@ -6,15 +6,13 @@ AS
 BEGIN
 	DECLARE 
 	@sumCash DECIMAL(18, 2) = (SELECT SUM(result.[Cash])
-							   FROM 
-								  (SELECT [Cash]
-										,ROW_NUMBER() OVER (ORDER BY [Cash] DESC) AS [Rows]
-								    FROM UsersGames
-								   WHERE [GameId] IN 
-											(SELECT [Id] 
-										       FROM Games
-										      WHERE [Name] = @gameName)) AS result
-							  WHERE result.[Rows] % 2 != 0)
+				    FROM 
+				        (SELECT [Cash], ROW_NUMBER() OVER (ORDER BY [Cash] DESC) AS [Rows]
+				           FROM UsersGames
+				          WHERE [GameId] IN (SELECT [Id] 
+							      FROM Games
+							     WHERE [Name] = @gameName)) AS result
+				  WHERE result.[Rows] % 2 != 0)
 	INSERT INTO @table 
 	VALUES (@sumCash)
 	RETURN
