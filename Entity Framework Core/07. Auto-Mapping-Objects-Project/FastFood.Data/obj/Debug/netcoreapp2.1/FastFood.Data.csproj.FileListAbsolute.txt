@@ -1,0 +1,15 @@
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.deps.json
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.runtimeconfig.json
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.runtimeconfig.dev.json
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.dll
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Data.pdb
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Models.dll
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\bin\Debug\netcoreapp2.1\FastFood.Models.pdb
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.AssemblyReference.cache
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.AssemblyInfoInputs.cache
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.AssemblyInfo.cs
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.CoreCompileInputs.cache
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.csproj.CopyComplete
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.dll
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.pdb
+C:\Users\user-pc\source\repos\EF\07. Auto-Mapping-Objects-Project\FastFood.Data\obj\Debug\netcoreapp2.1\FastFood.Data.genruntimeconfig.cache
