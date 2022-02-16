@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda", "Panda.csproj", "{E9B06F98-FDA0-4E16-B2BA-AF7256E51BAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebServer", "..\..\..\..\C# Web Development Basics Retake Exam - 24 August 2021\MyWebServer\MyWebServer.csproj", "{F29A3A9F-F821-466F-B91C-228447EB831E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9B06F98-FDA0-4E16-B2BA-AF7256E51BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B06F98-FDA0-4E16-B2BA-AF7256E51BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B06F98-FDA0-4E16-B2BA-AF7256E51BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B06F98-FDA0-4E16-B2BA-AF7256E51BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F29A3A9F-F821-466F-B91C-228447EB831E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29A3A9F-F821-466F-B91C-228447EB831E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29A3A9F-F821-466F-B91C-228447EB831E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29A3A9F-F821-466F-B91C-228447EB831E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3F291CC-E98C-4AF0-BAE3-306BC990D780}
+	EndGlobalSection
+EndGlobal
